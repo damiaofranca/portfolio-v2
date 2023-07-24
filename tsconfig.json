@@ -17,6 +17,10 @@
     "plugins": [
       {
         "name": "next"
+      },
+      {
+        "ssr": true, 
+        "name":"styled-components"
       }
     ],
     "paths": {
