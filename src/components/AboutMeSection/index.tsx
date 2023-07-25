@@ -12,7 +12,7 @@ import {
 	Introdution,
 } from "./styles";
 import File from "@/assets/icons/file.svg";
-import Perfil from "@/assets/photos/foto.jpeg";
+import Perfil from "@/assets/photos/second.jpeg";
 import Icon from "../Icon";
 
 const AboutMeSection: React.FC = () => {

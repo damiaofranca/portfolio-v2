@@ -18,7 +18,7 @@ import {
 import Pokedex from "@/assets/photos/pokedex.png";
 import Vertigo from "@/assets/photos/vertigo.png";
 import LandingPage from "@/assets/photos/landing-page.png";
-import ClientSystem from "@/assets/photos/client-system.png";
+import ClientVysor from "@/assets/photos/client-vysor.jpg";
 import ActionCard from "../ActionCard";
 
 const ProjectsSection: React.FC = () => {
@@ -44,7 +44,10 @@ const ProjectsSection: React.FC = () => {
 					</ContainerActions>
 				</Card>
 				<Card>
-					<Projects src={ClientSystem} alt="Sistema de gerênciamento" />
+					<Projects
+						src={ClientVysor}
+						alt="Sistema de gerênciamento de produtos + clientes"
+					/>
 					<TitleProject>Client Vysor</TitleProject>
 					<DescriptionProject>
 						Projeto criado com finalidade de gerênciamento de produtos +

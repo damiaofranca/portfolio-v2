@@ -26,12 +26,13 @@ export const Contact = styled.div`
 	}
 `;
 
-export const ContactText = styled.label`
+export const ContactText = styled.a`
 	display: flex;
 	color: #a4a7b6;
 	font-size: 11px;
 	font-weight: 600;
 	align-items: center;
+	text-decoration: none;
 `;
 
 export const Linkedin = styled.a`
