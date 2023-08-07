@@ -51,7 +51,8 @@ const ProjectsSection: React.FC = () => {
 					<TitleProject>Client Vysor</TitleProject>
 					<DescriptionProject>
 						Projeto criado com finalidade de gerênciamento de produtos +
-						clientes de forma real time.
+						clientes de forma real time. <br />
+						Email:testeapp@gmail.com - Senha: qazxsw123.
 					</DescriptionProject>
 					<Stack>
 						Technologias usadas:
