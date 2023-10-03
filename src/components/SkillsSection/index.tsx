@@ -1,7 +1,14 @@
 "use client";
 
 import React from "react";
-import { Container, Introdution, Skill, Title, WrapperSkills } from "./styles";
+import {
+	Container,
+	ContainerSkill,
+	Introdution,
+	Skill,
+	Title,
+	WrapperSkills,
+} from "./styles";
 
 import HtmlIcon from "@/assets/icons/html.svg";
 import CssIcon from "@/assets/icons/css.svg";
@@ -20,15 +27,37 @@ const SkillsSection: React.FC = () => {
 				<Title>Abilidades</Title>
 			</Introdution>
 			<WrapperSkills>
-				<Skill src={HtmlIcon} alt="HTML" title="HTML" />
-				<Skill src={CssIcon} alt="CSS" title="CSS" />
-				<Skill src={JsIcon} alt="Javascript" title="Javascript" />
-				<Skill src={TsIcon} alt="Typescript" title="Typescript" />
+				<ContainerSkill $titleskill="HTML">
+					<Skill src={HtmlIcon} alt="HTML" />
+				</ContainerSkill>
 
-				<Skill src={ReactIcon} alt="React" title="React" />
-				<Skill src={NextIcon} alt="NextJs" title="NextJs" />
-				<Skill src={TailwindIcon} alt="Tailwind" title="Tailwind" />
-				<Skill src={GitIcon} alt="GIT" title="GIT" />
+				<ContainerSkill $titleskill="CSS">
+					<Skill src={CssIcon} alt="CSS" />
+				</ContainerSkill>
+
+				<ContainerSkill $titleskill="Javascript">
+					<Skill src={JsIcon} alt="Javascript" />
+				</ContainerSkill>
+
+				<ContainerSkill $titleskill="Typescript">
+					<Skill src={TsIcon} alt="Typescript" />
+				</ContainerSkill>
+
+				<ContainerSkill $titleskill="React">
+					<Skill src={ReactIcon} alt="React" />
+				</ContainerSkill>
+
+				<ContainerSkill $titleskill="NextJs">
+					<Skill src={NextIcon} alt="NextJS" />
+				</ContainerSkill>
+
+				<ContainerSkill $titleskill="Tailwind">
+					<Skill src={TailwindIcon} alt="Tailwind" />
+				</ContainerSkill>
+
+				<ContainerSkill $titleskill="GIT">
+					<Skill src={GitIcon} alt="GIT" />
+				</ContainerSkill>
 			</WrapperSkills>
 		</Container>
 	);

@@ -44,6 +44,10 @@ export const Header: React.FC = () => {
 				<ListNav>
 					<ListItem>
 						<LinkNavigation
+							as={"a"}
+							onClickCapture={() => {
+								console.log("adsdas");
+							}}
 							className={`desktop ${
 								currentSection === "" ? "current-section" : ""
 							}`}
@@ -54,6 +58,7 @@ export const Header: React.FC = () => {
 					</ListItem>
 					<ListItem>
 						<LinkNavigation
+							as={"a"}
 							className={`desktop ${
 								currentSection === "#about-me" ? "current-section" : ""
 							}`}
@@ -64,6 +69,7 @@ export const Header: React.FC = () => {
 					</ListItem>
 					<ListItem>
 						<LinkNavigation
+							as={"a"}
 							className={`desktop ${
 								currentSection === "#skills" ? "current-section" : ""
 							}`}
@@ -74,6 +80,7 @@ export const Header: React.FC = () => {
 					</ListItem>
 					<ListItem>
 						<LinkNavigation
+							as={"a"}
 							className={`desktop ${
 								currentSection === "#projects" ? "current-section" : ""
 							}`}
@@ -101,6 +108,7 @@ export const Header: React.FC = () => {
 					<ListNav>
 						<ListItem className={handlerActionsHeader ? "opened" : "closed"}>
 							<LinkNavigation
+								as={"a"}
 								href=""
 								className={` ${currentSection === "" ? "current-section" : ""}`}
 							>
@@ -109,6 +117,7 @@ export const Header: React.FC = () => {
 						</ListItem>
 						<ListItem className={handlerActionsHeader ? "opened" : "closed"}>
 							<LinkNavigation
+								as={"a"}
 								href="#about-me"
 								className={` ${
 									currentSection === "#about-me" ? "current-section" : ""
@@ -119,6 +128,7 @@ export const Header: React.FC = () => {
 						</ListItem>
 						<ListItem className={handlerActionsHeader ? "opened" : "closed"}>
 							<LinkNavigation
+								as={"a"}
 								href="#skills"
 								className={` ${
 									currentSection === "#skills" ? "current-section" : ""
@@ -129,6 +139,7 @@ export const Header: React.FC = () => {
 						</ListItem>
 						<ListItem className={handlerActionsHeader ? "opened" : "closed"}>
 							<LinkNavigation
+								as={"a"}
 								href="#projects"
 								className={` ${
 									currentSection === "#projects" ? "current-section" : ""

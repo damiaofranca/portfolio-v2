@@ -57,14 +57,46 @@ export const WrapperSkills = styled.div`
 	}
 `;
 
-export const Skill = styled(Image)`
+export const Skill = styled(Image)``;
+
+export const ContainerSkill = styled.div<{ $titleskill: string }>`
 	width: 90px;
 	height: 90px;
+	position: relative;
 
-	@media screen and (max-width: 690px) {
-		& {
-			width: 64px;
-			height: 64px;
+	&::after {
+		top: 0%;
+		left: 50%;
+		opacity: 0;
+		color: #ffff;
+		height: 29px;
+		display: flex;
+		font-size: small;
+		font-weight: 600;
+		border-radius: 4px;
+		position: absolute;
+		align-items: center;
+		padding: 0.1rem 0.4rem;
+		justify-content: center;
+		background-color: #6997ff;
+		transform: translateX(-50%);
+		transition: all 250ms ease-in-out;
+		content: ${({ $titleskill }) => `"${$titleskill}"`};
+	}
+
+	&:hover {
+		&::after {
+			top: -38px;
+			opacity: 1;
+			transform: translateX(-50%);
+			transition: all 250ms ease-in-out;
+		}
+
+		@media screen and (max-width: 690px) {
+			& {
+				width: 64px;
+				height: 64px;
+			}
 		}
 	}
 `;

@@ -10,8 +10,9 @@ export const Container = styled.section`
 
 	@media screen and (max-width: 690px) {
 		& {
-			align-items: flex-start;
 			padding: 20px 26px;
+			align-items: flex-start;
+			min-height: fit-content;
 		}
 	}
 `;

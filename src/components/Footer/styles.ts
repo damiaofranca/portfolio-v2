@@ -35,7 +35,7 @@ export const ContactText = styled.a`
 	text-decoration: none;
 `;
 
-export const Linkedin = styled.a`
+export const LinkText = styled.a`
 	display: flex;
 	cursor: pointer;
 	align-items: center;

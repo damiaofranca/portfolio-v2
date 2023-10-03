@@ -1,10 +1,12 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import "./globals.css";
 import type { Metadata } from "next";
 import StyledComponentsRegistry from "./registry";
+import { SmoothScrolling } from "@/hooks/useSmoothScrolling";
 
 export const metadata: Metadata = {
-	title: "Portfolio",
-	description: "portfolio",
+	title: "Damião França",
+	description: "portfólio",
 };
 
 export default function RootLayout({
@@ -31,7 +33,9 @@ export default function RootLayout({
 				/>
 			</head>
 			<StyledComponentsRegistry>
-				<body>{children}</body>
+				<SmoothScrolling>
+					<body>{children}</body>
+				</SmoothScrolling>
 			</StyledComponentsRegistry>
 		</html>
 	);

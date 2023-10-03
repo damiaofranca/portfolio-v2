@@ -2,8 +2,8 @@
 
 import React from "react";
 
-import PhoneIcon from "@/assets/icons/phone.svg";
 import EmailIcon from "@/assets/icons/email.svg";
+import GitHubIcon from "@/assets/icons/github.svg";
 import LinkedinIcon from "@/assets/icons/linkedin.svg";
 
 import {
@@ -11,7 +11,7 @@ import {
 	ContactText,
 	Container,
 	ContainerContact,
-	Linkedin,
+	LinkText,
 } from "./styles";
 import Icon from "../Icon";
 
@@ -20,20 +20,22 @@ const Footer: React.FC = () => {
 		<Container id="footer">
 			<ContainerContact>
 				<Contact>
+					<Icon mh={12} src={GitHubIcon} alt="Github" />
+					<LinkText target="_blank" href="https://github.com/damiaofranca">
+						GitHub
+					</LinkText>
+				</Contact>
+
+				<Contact>
 					<Icon mh={12} src={LinkedinIcon} alt="Linkedin" />
-					<Linkedin
+					<LinkText
 						target="_blank"
 						href="https://linkedin.com/in/damião-frança-a47b20223"
 					>
 						Damião França
-					</Linkedin>
+					</LinkText>
 				</Contact>
-				<Contact>
-					<Icon mh={12} src={PhoneIcon} alt="Numéro de contato" />
-					<ContactText href="https://WA.me/+5584998930523?message=Olá">
-						(84) 9 9893-0523
-					</ContactText>
-				</Contact>
+
 				<Contact>
 					<Icon mh={12} src={EmailIcon} alt="Email de contato" />
 					<ContactText href="maito:francadamiao202@gmail.com">
