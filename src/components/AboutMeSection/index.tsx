@@ -48,7 +48,7 @@ const AboutMeSection: React.FC = () => {
 						title="teste"
 						as="a"
 						target="_blank"
-						href="https://drive.google.com/file/d/1-2FF6zHds-5aMcN-gmgL3tp9iS6rWapQ/view?usp=sharing"
+						href="https://drive.google.com/file/d/1XyKocGO3oTBxK4Pi5xj3_zk5eVza3isI/view?usp=sharing"
 					>
 						Visualizar CV
 						<Icon src={File} alt="Informações de contato" mh={6} />
