@@ -1,21 +1,29 @@
 /* eslint-disable @next/next/no-page-custom-font */
-import "./globals.css";
 import type { Metadata } from "next";
 import StyledComponentsRegistry from "./registry";
 import { SmoothScrolling } from "@/hooks/useSmoothScrolling";
+
+import "./globals.css";
+import { Locale, i18n } from "@/i18n.config";
 
 export const metadata: Metadata = {
 	title: "Damião França",
 	description: "portfólio",
 };
 
+export async function generateStaticParams() {
+	return i18n.locales.map((locale) => ({ lang: locale }));
+}
+
 export default function RootLayout({
 	children,
+	params,
 }: {
 	children: React.ReactNode;
+	params: { lang: Locale };
 }) {
 	return (
-		<html lang="pt-br">
+		<html lang={params.lang}>
 			<head>
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
 				<link

@@ -16,13 +16,15 @@ import {
 	ContainerMobile,
 	ContainerHeader,
 	Centralized,
+	ContainerSwitcher,
 } from "./styles";
 import { useMediaQueries } from "@/hooks/useMediaQuerie";
+import { LocaleSwitcher } from "../LocaleSwitcher";
 
 export const Header: React.FC = () => {
 	const pathname = usePathname();
 	const searchParams = useSearchParams();
-	const { value } = useMediaQueries({ width: 576 });
+	const { value } = useMediaQueries({ width: 846 });
 	const [currentSection, setCurrentSection] = React.useState<string>("#home");
 	const [handlerActionsHeader, setHandlerActionsHeader] =
 		React.useState<boolean>(false);
@@ -89,12 +91,18 @@ export const Header: React.FC = () => {
 							Projetos
 						</LinkNavigation>
 					</ListItem>
-					<HandlerButtonHeader
-						className="desktop"
-						onClick={() => setHandlerActionsHeader(true)}
-					>
-						<Image src={Bars} alt={"Abrir cabeçalho"} />
-					</HandlerButtonHeader>
+
+					<div style={{ display: "flex" }}>
+						<HandlerButtonHeader
+							className="desktop"
+							onClick={() => setHandlerActionsHeader(true)}
+						>
+							<Image src={Bars} alt={"Abrir cabeçalho"} />
+						</HandlerButtonHeader>
+						<ContainerSwitcher>
+							<LocaleSwitcher />
+						</ContainerSwitcher>
+					</div>
 				</ListNav>
 			</Container>
 			<ContainerMobile isheaderopen={handlerActionsHeader ? true : undefined}>

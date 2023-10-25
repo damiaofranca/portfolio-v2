@@ -40,7 +40,7 @@ export const ListNav = styled.ul`
 	display: flex;
 	list-style: none;
 
-	@media screen and (max-width: 690px) {
+	@media screen and (max-width: 846px) {
 		& {
 			flex-direction: column;
 		}
@@ -50,7 +50,7 @@ export const ListNav = styled.ul`
 export const ListItem = styled.li`
 	margin-left: 18px;
 
-	@media screen and (max-width: 690px) {
+	@media screen and (max-width: 846px) {
 		&.opened {
 			margin: 0 0 28px 0;
 			text-align: center;
@@ -58,6 +58,12 @@ export const ListItem = styled.li`
 		& > .desktop {
 			display: none;
 		}
+	}
+`;
+
+export const ContainerSwitcher = styled.li`
+	@media screen and (min-width: 846px) {
+		margin-left: 18px;
 	}
 `;
 
@@ -69,7 +75,7 @@ export const HandlerButtonHeader = styled.button`
 	margin-left: 12px;
 	background-color: transparent;
 
-	@media screen and (min-width: 690px) {
+	@media screen and (min-width: 846px) {
 		&.desktop {
 			display: none !important;
 		}
