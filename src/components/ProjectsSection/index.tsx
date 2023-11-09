@@ -21,77 +21,68 @@ import LandingPage from "@/assets/photos/landing-page.png";
 import ClientVysor from "@/assets/photos/client-vysor.jpg";
 import ActionCard from "../ActionCard";
 
-const ProjectsSection: React.FC = () => {
+interface IProjectsSection {
+	texts: any;
+}
+
+const ProjectsSection: React.FC<IProjectsSection> = ({ texts }) => {
 	return (
 		<Container id="projects">
 			<Introdution>
-				<Title>Projetos pessoais</Title>
+				<Title>{texts.title}</Title>
 			</Introdution>
 			<WrapperProjects>
 				<Card>
-					<Projects src={LandingPage} alt="Landing page" />
-					<TitleProject>Landing page fintech</TitleProject>
+					<Projects src={LandingPage} alt={texts.list.first.altImage} />
+					<TitleProject>{texts.list.first.title}</TitleProject>
 					<DescriptionProject>
-						Projeto criado com finalidade de marketing de uma empresa ramo
-						fintech.
+						{texts.list.first.description}
 					</DescriptionProject>
 					<Stack>
-						Technologias usadas:
-						<Technologies>Typescript, Angular e SCSS.</Technologies>
+						{texts.stackTitle}
+
+						<Technologies>{texts.list.first.stack}</Technologies>
 					</Stack>
 					<ContainerActions>
 						<ActionCard url="https://landing-page-fintech-demo.vercel.app/" />
 					</ContainerActions>
 				</Card>
 				<Card>
-					<Projects
-						src={ClientVysor}
-						alt="Sistema de gerênciamento de produtos + clientes"
-					/>
-					<TitleProject>Client Vysor</TitleProject>
+					<Projects src={ClientVysor} alt={texts.list.second.altImage} />
+					<TitleProject>{texts.list.second.title}</TitleProject>
 					<DescriptionProject>
-						Projeto criado com finalidade de gerênciamento de produtos +
-						clientes de forma real time. <br />
-						Email:testeapp@gmail.com - Senha: qazxsw123.
+						{texts.list.second.description}
 					</DescriptionProject>
 					<Stack>
-						Technologias usadas:
-						<Technologies>
-							Typescript, React, Styled Components e Firebase.
-						</Technologies>
+						{texts.stackTitle}
+						<Technologies>{texts.list.second.stack}</Technologies>
 					</Stack>
 					<ContainerActions>
 						<ActionCard url="https://client-vysor.vercel.app" />
 					</ContainerActions>
 				</Card>
 				<Card>
-					<Projects src={Pokedex} alt="Pokedex" />
-					<TitleProject>Pokedex</TitleProject>
+					<Projects src={Pokedex} alt={texts.list.third.altImage} />
+					<TitleProject>{texts.list.third.title}</TitleProject>
 					<DescriptionProject>
-						Projeto criado com finalidade de ánalise de dados dos personagens do
-						anime Pokemon.
+						{texts.list.third.description}
 					</DescriptionProject>
 					<Stack>
-						Technologias usadas:
-						<Technologies>
-							Typescript, React, Vite, Axios e Styled Components.
-						</Technologies>
+						{texts.stackTitle}
+						<Technologies>{texts.list.third.stack}</Technologies>
 					</Stack>
 					<ContainerActions>
 						<ActionCard url="https://pokedex-nzuf.vercel.app/" />
 					</ContainerActions>
 				</Card>
 				<Card>
-					<Projects src={Vertigo} alt="Vanilla UI login" />
-					<TitleProject>Login UI</TitleProject>
-					<DescriptionProject>
-						Projeto criado com intuito de ánalise de conhecimento.
-					</DescriptionProject>
+					<Projects src={Vertigo} alt={texts.list.four.altImage} />
+					<TitleProject>{texts.list.four.title}</TitleProject>
+					<DescriptionProject>{texts.list.four.description}</DescriptionProject>
 					<Stack>
+						{texts.stackTitle}
 						Technologias usadas:
-						<Technologies>
-							Typescript, React, formik, Yup, Styled Components.
-						</Technologies>
+						<Technologies>{texts.list.four.stack}</Technologies>
 					</Stack>
 					<ContainerActions>
 						<ActionCard url="https://vertigo-demo.vercel.app/" />

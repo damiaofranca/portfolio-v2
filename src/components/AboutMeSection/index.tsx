@@ -15,13 +15,17 @@ import File from "@/assets/icons/file.svg";
 import Perfil from "@/assets/photos/second.jpeg";
 import Icon from "../Icon";
 
-const AboutMeSection: React.FC = () => {
+interface IAboutMeSection {
+	texts: any;
+}
+
+const AboutMeSection: React.FC<IAboutMeSection> = ({ texts }) => {
 	return (
 		<Container id="about-me">
 			<Introdution>
-				<Title>Sobre mim</Title>
+				<Title>{texts.aboutMe}</Title>
 				<TextInfo style={{ textAlign: "center", margin: 0 }}>
-					Introdução
+					{texts.subtitle}
 				</TextInfo>
 			</Introdution>
 
@@ -29,20 +33,11 @@ const AboutMeSection: React.FC = () => {
 				<Photo src={Perfil} alt="Damião" />
 				<InformationsWrapper>
 					<TextInfo>
-						Atualmente, aos 21 anos, possuo vasta experiência em diversos
-						projetos profissionais, utilizando tecnologias de ponta, tais como
-						React, React-Native, NextJs e stack vanilla (HTML, CSS, Javascript e
-						Typescript), além de pré-processadores, git (para versionamento) e
-						bitbucket. Com quatro anos de atuação no setor de telecomunicações e
-						provedores de internet, tive a oportunidade de trabalhar em grandes
-						empresas, aprimorando minhas habilidades tanto em SOFT SKILLS quanto
-						HARD SKILLS.
+						{texts.information.first}
+
 						<br />
 						<br />
-						Além de me dedicar ao cumprimento das minhas obrigações de forma
-						exemplar, busco sempre adicionar uma pitada de humor ao ambiente,
-						adequando-o à situação e, assim, contribuindo para o bem-estar e
-						colaboração com meus colegas de trabalho.
+						{texts.information.second}
 					</TextInfo>
 					<InformationsBtn
 						title="teste"
@@ -50,7 +45,7 @@ const AboutMeSection: React.FC = () => {
 						target="_blank"
 						href="https://drive.google.com/file/d/1XyKocGO3oTBxK4Pi5xj3_zk5eVza3isI/view?usp=sharing"
 					>
-						Visualizar CV
+						{texts.buttonCv}
 						<Icon src={File} alt="Informações de contato" mh={6} />
 					</InformationsBtn>
 				</InformationsWrapper>

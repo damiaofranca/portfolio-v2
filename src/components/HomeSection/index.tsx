@@ -15,7 +15,11 @@ import Send from "@/assets/icons/send.svg";
 import Perfil from "@/assets/photos/foto.jpeg";
 import Icon from "../Icon";
 
-const HomeSection: React.FC = () => {
+interface IHomeSection {
+	texts: any;
+}
+
+const HomeSection: React.FC<IHomeSection> = ({ texts }) => {
 	return (
 		<Container id="home">
 			<Wrapper>
@@ -23,14 +27,14 @@ const HomeSection: React.FC = () => {
 					<Title>
 						Damião S. <br /> França
 					</Title>
-					<SubTitle>Front-end Developer</SubTitle>
+					<SubTitle>{texts.subtitle}</SubTitle>
 					<TextInfo>
-						Desenvolvedor front-end há mais <br /> de 4 anos com foco em ReactJs
-						e NextJs.
+						{texts.context.first} <br />
+						{texts.context.second}
 					</TextInfo>
 					<InformationsBtn href="#footer">
-						<Icon src={Send} alt="Informações de contato" mh={6} />
-						Informações de contato
+						<Icon src={Send} alt={texts.contactInformation} mh={6} />
+						{texts.contactInformation}
 					</InformationsBtn>
 				</InformationsWrapper>
 				<Photo src={Perfil} alt="Damião" />

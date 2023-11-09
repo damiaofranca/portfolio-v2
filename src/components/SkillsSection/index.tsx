@@ -20,11 +20,15 @@ import NextIcon from "@/assets/icons/next.svg";
 import TailwindIcon from "@/assets/icons/tailwind.svg";
 import GitIcon from "@/assets/icons/git.svg";
 
-const SkillsSection: React.FC = () => {
+interface ISkillsSection {
+	texts: any;
+}
+
+const SkillsSection: React.FC<ISkillsSection> = ({ texts }) => {
 	return (
 		<Container id="skills">
 			<Introdution>
-				<Title>Abilidades</Title>
+				<Title>{texts.title}</Title>
 			</Introdution>
 			<WrapperSkills>
 				<ContainerSkill $titleskill="HTML">

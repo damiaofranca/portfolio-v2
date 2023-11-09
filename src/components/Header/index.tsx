@@ -11,17 +11,21 @@ import {
 	LogoText,
 	ListItem,
 	Container,
-	LinkNavigation,
-	HandlerButtonHeader,
-	ContainerMobile,
-	ContainerHeader,
 	Centralized,
+	LinkNavigation,
+	ContainerHeader,
+	ContainerMobile,
 	ContainerSwitcher,
+	HandlerButtonHeader,
 } from "./styles";
 import { useMediaQueries } from "@/hooks/useMediaQuerie";
 import { LocaleSwitcher } from "../LocaleSwitcher";
 
-export const Header: React.FC = () => {
+interface IHeader {
+	texts: any;
+}
+
+export const Header: React.FC<IHeader> = ({ texts }) => {
 	const pathname = usePathname();
 	const searchParams = useSearchParams();
 	const { value } = useMediaQueries({ width: 846 });
@@ -66,7 +70,7 @@ export const Header: React.FC = () => {
 							}`}
 							href="#about-me"
 						>
-							Sobre mim
+							{texts.aboutMe}
 						</LinkNavigation>
 					</ListItem>
 					<ListItem>
@@ -77,7 +81,7 @@ export const Header: React.FC = () => {
 							}`}
 							href="#skills"
 						>
-							Habilidades
+							{texts.skills}
 						</LinkNavigation>
 					</ListItem>
 					<ListItem>
@@ -88,7 +92,7 @@ export const Header: React.FC = () => {
 							}`}
 							href="#projects"
 						>
-							Projetos
+							{texts.projects}
 						</LinkNavigation>
 					</ListItem>
 
@@ -131,7 +135,7 @@ export const Header: React.FC = () => {
 									currentSection === "#about-me" ? "current-section" : ""
 								}`}
 							>
-								Sobre mim
+								{texts.aboutMe}
 							</LinkNavigation>
 						</ListItem>
 						<ListItem className={handlerActionsHeader ? "opened" : "closed"}>
@@ -142,7 +146,7 @@ export const Header: React.FC = () => {
 									currentSection === "#skills" ? "current-section" : ""
 								}`}
 							>
-								Habilidades
+								{texts.skills}
 							</LinkNavigation>
 						</ListItem>
 						<ListItem className={handlerActionsHeader ? "opened" : "closed"}>
@@ -153,7 +157,7 @@ export const Header: React.FC = () => {
 									currentSection === "#projects" ? "current-section" : ""
 								}`}
 							>
-								Projetos
+								{texts.projects}
 							</LinkNavigation>
 						</ListItem>
 					</ListNav>

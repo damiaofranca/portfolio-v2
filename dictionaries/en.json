@@ -3,5 +3,55 @@
 		"aboutMe": "About me",
 		"skills": "Skills",
 		"projects": "Projects"
+	},
+	"main": {
+		"subtitle": "Front-end Developer",
+		"context": {
+			"first": "Front-end developer for more",
+			"second": "4 years focusing on ReactJs and NextJs."
+		},
+		"contactInformation": "Contact information"
+	},
+	"aboutMe": {
+		"title": "About me",
+		"subtitle": "Introduction",
+		"information": {
+			"first": "Currently, at 21 years old, I have extensive experience in several professional projects, using cutting-edge technologies, such as React, React-Native, NextJs and vanilla stack (HTML, CSS, Javascript and Typescript), as well as preprocessors, git (for versioning) and bitbucket. With four years of experience in the telecommunications and internet provider sector, I had the opportunity to work in large companies, improving my skills in both SOFT SKILLS and HARD SKILLS.",
+			"second": "In addition to dedicating myself to fulfilling my obligations in an exemplary manner, I always seek to make the work environment more comfortable for everyone."
+		},
+		"buttonCv": "View CV"
+	},
+	"skills": {
+		"title": "Skills"
+	},
+	"projects": {
+		"title": "Personal projects",
+		"stackTitle": "Technologies used:",
+		"list": {
+			"first": {
+				"altImage": "Landing page",
+				"title": "Fintech landing page",
+				"description": "Project created for marketing purposes for a fintech company.",
+				"stack": "Typescript, Angular and SCSS."
+			},
+			"second": {
+				"title": "Client Vysor",
+				"altImage": "Product + customer management system",
+				"description": "Project created for the purpose of managing products + customers in a real-time manner. Email:testeapp@gmail.com - Password: qazxsw123.",
+				"stack": "Typescript, React, Styled Components and Firebase."
+			},
+			"third": {
+				"title": "Pokedex",
+				"altImage": "Pokedex",
+				"description": "Project created for the purpose of analyzing data on Pokemon anime characters.",
+				"stack": "Typescript, React, Vite, Axios and Styled Components."
+			},
+			"four": {
+				"title": "Login UI",
+				"altImage": "Vanilla UI login",
+				"description": "Project created with the aim of knowledge analysis.",
+				"stack": "Typescript, React, formik, Yup, Styled Components."
+			}
+		}
 	}
 }

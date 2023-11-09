@@ -17,15 +17,15 @@ export default async function Home({
 }: {
 	params: { lang: Locale };
 }) {
-	const page = await getDictionary(lang);
+	const dictionary = await getDictionary(lang);
 
 	return (
 		<Container>
-			<Header />
-			<HomeSection />
-			<AboutMeSection />
-			<SkillsSection />
-			<ProjectsSection />
+			<Header texts={dictionary.header} />
+			<HomeSection texts={dictionary.main} />
+			<AboutMeSection texts={dictionary.aboutMe} />
+			<SkillsSection texts={dictionary.skills} />
+			<ProjectsSection texts={dictionary.projects} />
 			<Footer />
 			<GoBackBtn />
 		</Container>
