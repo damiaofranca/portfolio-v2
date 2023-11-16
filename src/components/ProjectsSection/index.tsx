@@ -18,7 +18,7 @@ import {
 import Pokedex from "@/assets/photos/pokedex.png";
 import Vertigo from "@/assets/photos/vertigo.png";
 import LandingPage from "@/assets/photos/landing-page.png";
-import ClientVysor from "@/assets/photos/client-vysor.jpg";
+import ClientVysor from "@/assets/photos/client-vysor.png";
 import ActionCard from "../ActionCard";
 
 interface IProjectsSection {
