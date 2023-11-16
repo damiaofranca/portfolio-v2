@@ -37,7 +37,7 @@
 			"second": {
 				"title": "Client Vysor",
 				"altImage": "Product + customer management system",
-				"description": "Project created for the purpose of managing products + customers in a real-time manner. Email:testeapp@gmail.com - Password: qazxsw123.",
+				"description": "Project created for the purpose of managing products + customers in a real-time manner.",
 				"stack": "Typescript, React, Styled Components and Firebase."
 			},
 			"third": {

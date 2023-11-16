@@ -37,7 +37,7 @@
 			"second": {
 				"title": "Client Vysor",
 				"altImage": "Sistema de gerênciamento de produtos + clientes",
-				"description": "Projeto criado com finalidade de gerênciamento de produtos + clientes de forma real time. Email:testeapp@gmail.com - Senha: qazxsw123.",
+				"description": "Projeto criado com finalidade de gerênciamento de produtos + clientes de forma real time.",
 				"stack": "Typescript, React, Styled Components e Firebase."
 			},
 			"third": {
