@@ -40,8 +40,8 @@ const AboutMeSection: React.FC<IAboutMeSection> = ({ texts }) => {
 						{texts.information.second}
 					</TextInfo>
 					<InformationsBtn
-						title="teste"
 						as="a"
+						title="teste"
 						target="_blank"
 						href={texts.linkCV}
 					>
