@@ -19,7 +19,9 @@
 			"first": "Currently, at 21 years old, I have extensive experience in several professional projects, using cutting-edge technologies, such as React, React-Native, NextJs and vanilla stack (HTML, CSS, Javascript and Typescript), as well as preprocessors, git (for versioning) and bitbucket. With four years of experience in the telecommunications and internet provider sector, I had the opportunity to work in large companies, improving my skills in both SOFT SKILLS and HARD SKILLS.",
 			"second": "In addition to dedicating myself to fulfilling my obligations in an exemplary manner, I always seek to make the work environment more comfortable for everyone."
 		},
-		"buttonCv": "View CV"
+		"buttonCv": "View CV",
+		"linkCV": "https://drive.google.com/file/d/1L1b5339C09wfmr5UU-G24y-hjMJ-Gs7v/view?usp=sharing"
+
 	},
 	"skills": {
 		"title": "Skills"

@@ -43,7 +43,7 @@ const AboutMeSection: React.FC<IAboutMeSection> = ({ texts }) => {
 						title="teste"
 						as="a"
 						target="_blank"
-						href="https://drive.google.com/file/d/1XyKocGO3oTBxK4Pi5xj3_zk5eVza3isI/view?usp=sharing"
+						href={texts.linkCV}
 					>
 						{texts.buttonCv}
 						<Icon src={File} alt="Informações de contato" mh={6} />
