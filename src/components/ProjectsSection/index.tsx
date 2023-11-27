@@ -3,20 +3,21 @@
 import React from "react";
 import {
 	Card,
+	Title,
+	Stack,
+	Projects,
 	Container,
 	Introdution,
-	Projects,
-	Title,
 	TitleProject,
-	WrapperProjects,
-	Stack,
 	Technologies,
-	DescriptionProject,
+	WrapperProjects,
 	ContainerActions,
+	DescriptionProject,
 } from "./styles";
 
 import Pokedex from "@/assets/photos/pokedex.png";
 import Vertigo from "@/assets/photos/vertigo.png";
+import NpmLogo from "@/assets/photos/npm_logo.jpg";
 import LandingPage from "@/assets/photos/landing-page.png";
 import ClientVysor from "@/assets/photos/client-vysor.png";
 import ActionCard from "../ActionCard";
@@ -76,13 +77,26 @@ const ProjectsSection: React.FC<IProjectsSection> = ({ texts }) => {
 					</ContainerActions>
 				</Card>
 				<Card>
-					<Projects src={Vertigo} alt={texts.list.four.altImage} />
+					<Projects src={NpmLogo} alt={texts.list.four.altImage} />
 					<TitleProject>{texts.list.four.title}</TitleProject>
 					<DescriptionProject>{texts.list.four.description}</DescriptionProject>
 					<Stack>
 						{texts.stackTitle}
 						Technologias usadas:
 						<Technologies>{texts.list.four.stack}</Technologies>
+					</Stack>
+					<ContainerActions>
+						<ActionCard url="https://www.npmjs.com/package/google-handler-area-react" />
+					</ContainerActions>
+				</Card>
+				<Card>
+					<Projects src={Vertigo} alt={texts.list.five.altImage} />
+					<TitleProject>{texts.list.five.title}</TitleProject>
+					<DescriptionProject>{texts.list.five.description}</DescriptionProject>
+					<Stack>
+						{texts.stackTitle}
+						Technologias usadas:
+						<Technologies>{texts.list.five.stack}</Technologies>
 					</Stack>
 					<ContainerActions>
 						<ActionCard url="https://vertigo-demo.vercel.app/" />

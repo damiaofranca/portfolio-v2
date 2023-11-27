@@ -48,6 +48,12 @@
 				"stack": "Typescript, React, Vite, Axios e Styled Components."
 			},
 			"four": {
+				"title": "Google Handler Area",
+				"altImage": "Google Handler Area",
+				"description": "Pacote React criado para gerênciamento de área no Google Maps.",
+				"stack": "Typescript, React e NodeJS."
+			},
+			"five": {
 				"title": "Login UI",
 				"altImage": "Vanilla UI login",
 				"description": "Projeto criado com intuito de ánalise de conhecimento.",
