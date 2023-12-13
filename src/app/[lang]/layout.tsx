@@ -5,6 +5,7 @@ import { SmoothScrolling } from "@/hooks/useSmoothScrolling";
 
 import "./globals.css";
 import { Locale, i18n } from "@/i18n.config";
+import { getDictionary } from "../../../dictionaries";
 
 export const metadata: Metadata = {
 	title: "Damião França",
@@ -22,6 +23,9 @@ export default function RootLayout({
 	children: React.ReactNode;
 	params: { lang: Locale };
 }) {
+	const dictionary = await getDictionary(lang);
+
+
 	return (
 		<html lang={params.lang}>
 			<head>
@@ -39,6 +43,9 @@ export default function RootLayout({
 					href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&display=swap"
 					rel="stylesheet"
 				/>
+
+				<meta name="description" content={dictionary.metaDescription}/>
+
 			</head>
 			<StyledComponentsRegistry>
 				<SmoothScrolling>
