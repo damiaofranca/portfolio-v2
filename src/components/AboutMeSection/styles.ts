@@ -34,6 +34,7 @@ export const Wrapper = styled.div`
 
 export const Experience = styled.div`
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 
 	@media screen and (max-width: 690px) {
@@ -163,3 +164,115 @@ export const InformationsBtn = styled.a`
 		}
 	}
 `;
+export const ContainerJobs = styled.div`
+display: flex;
+margin-top: 56px;
+justify-content: center;
+
+
+
+@media screen and (max-width: 860px) {
+		& {
+			align-items: center;
+			flex-direction: column;
+		}
+
+		& .divider{
+			display: none;
+		}
+
+		& .last{
+	margin-top: 80px !important;
+		}
+	}
+`
+
+export const Divider = styled.div`
+width: 1px;
+margin: 0 60px;
+min-height: 900px;
+background-color: #e7e7e7;
+` 
+
+
+export const Card = styled.div`
+max-width: 500px;
+min-height: 490px;
+padding: 18px 24px;
+height: fit-content;
+border-radius: 14px;
+background-color: #efefef;
+
+&.last{
+	margin-top: 180px;
+}
+`
+
+
+
+export const TitleJob = styled.h4`
+	color: #4d4e52;
+	font-weight: 600;
+	font-size: 1.46rem;
+	margin-bottom: 6px;
+
+	@media screen and (max-width: 768px) {
+		& {
+			font-size: 1.5rem;
+		}
+	}
+
+	@media screen and (max-width: 690px) {
+		& {
+			font-size: 1.15rem;
+		}
+	}
+`;
+
+
+
+export const CompanyName = styled.h4`
+	color: #a4a4a5;
+	font-size: 1rem;
+	font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 2px;
+
+	@media screen and (max-width: 768px) {
+		& {
+			font-size: 0.96rem;
+		}
+	}
+
+	
+`;
+
+
+export const ListJob =styled.ul`
+margin-top: 16px;
+margin-left: 20px;
+
+& > li {
+	color: #a4a4a5;
+	margin: 10px 0;
+	list-style-type: circle;
+
+	& span{
+		color: #a4a4a5;
+		font-weight: 300;
+		margin-left: 6px;
+		line-height: 24px;
+		font-size: 0.96rem;
+	}
+}
+
+
+@media screen and (max-width: 690px) {
+	& > li {
+		& span{
+		font-size: 0.86rem;
+	}
+}
+
+}
+`

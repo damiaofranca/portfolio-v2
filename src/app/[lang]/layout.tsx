@@ -25,7 +25,6 @@ export default async function RootLayout({
 }) {
 	const dictionary = await getDictionary(params.lang);
 
-
 	return (
 		<html lang={params.lang}>
 			<head>
@@ -36,7 +35,7 @@ export default async function RootLayout({
 					href="https://fonts.gstatic.com"
 				/>
 				<link
-					href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+					href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;300;700&display=swap"
 					rel="stylesheet"
 				/>
 				<link
@@ -44,8 +43,7 @@ export default async function RootLayout({
 					rel="stylesheet"
 				/>
 
-				<meta name="description" content={dictionary.metaDescription}/>
-
+				<meta name="description" content={dictionary.metaDescription} />
 			</head>
 			<StyledComponentsRegistry>
 				<SmoothScrolling>

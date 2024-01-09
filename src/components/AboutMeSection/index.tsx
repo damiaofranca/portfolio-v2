@@ -12,6 +12,12 @@ import {
 	Introdution,
 	ContainerIntruction,
 	Experience,
+	ContainerJobs,
+	Divider,
+	Card,
+	CompanyName,
+	TitleJob,
+	ListJob,
 } from "./styles";
 import File from "@/assets/icons/file.svg";
 import Perfil from "@/assets/photos/second.jpeg";
@@ -54,21 +60,51 @@ const AboutMeSection: React.FC<IAboutMeSection> = ({ texts }) => {
 					</InformationsWrapper>
 				</Wrapper>
 			</ContainerIntruction>
-			<ContainerIntruction>
-				<Experience>
-					<Introdution>
-						<TextInfo
-							style={{
-								textAlign: "center",
-								margin: "42px 0 0 0",
-								fontSize: 20,
-							}}
-						>
-							{texts.experienceTitle}
-						</TextInfo>
-					</Introdution>
-				</Experience>
-			</ContainerIntruction>
+			<Experience>
+				<TextInfo
+					style={{
+						textAlign: "center",
+						margin: "46px 0 0 0",
+						fontSize: 20,
+					}}
+				>
+					{texts.experienceTitle}
+				</TextInfo>
+				<ContainerJobs>
+					<Card>
+						<TitleJob>Front-end Developer</TitleJob>
+						<CompanyName>
+							{texts.jobs[1].company} <br />
+							{texts.jobs[1].date}
+						</CompanyName>
+
+						<ListJob>
+							{(texts.jobs[1].list as string[]).map((fact, idx) => (
+								<li key={idx}>
+									<span>{fact}</span>
+								</li>
+							))}
+						</ListJob>
+					</Card>
+
+					<Divider className="divider" />
+					<Card className="last">
+						<TitleJob>Front-end Developer</TitleJob>
+						<CompanyName>
+							{texts.jobs[0].company} <br />
+							{texts.jobs[0].date}
+						</CompanyName>
+
+						<ListJob>
+							{(texts.jobs[0].list as string[]).map((fact, idx) => (
+								<li key={idx}>
+									<span>{fact}</span>
+								</li>
+							))}
+						</ListJob>
+					</Card>
+				</ContainerJobs>
+			</Experience>
 		</Container>
 	);
 };

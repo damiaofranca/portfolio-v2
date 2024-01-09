@@ -17,6 +17,29 @@
 		"title": "About me",
 		"subtitle": "Introduction",
 		"experienceTitle": "Professional experience",
+		"jobs": [
+			{
+				"company": "Brisanet Telecommunications",
+				"date": "03/2020 - 06/2022",
+				"list": [
+					"Developed and maintained front-end applications for Brisanet Telecomunicações, with a focus on improving the user experience and usability of its online services;",
+					"Collaborated strictly with the backend team and the client to implement the rules business as expected, ensuring consistency in functionality across the platform;",
+					"Used technologies such as Angular, React, React-native, NextJS, UI libraries and pre-processors, aiming for performance, design and application speeds ;",
+					"Participated in planning and code review meetings, ensuring on-time delivery of projects and maintaining a high standard of quality in front-end code;",
+					"Collaborated with the implementation of embargoed projects aiming to cut costs as well as use to create new products;"
+				]
+			},
+			{
+				"company": "BRND Solutions",
+				"date": "06/2020 - 08/2023",
+				"list": [
+					"I collaborated strictly with client projects in the front-end area, aiming to get the client's idea off the ground;",
+					"I developed projects in the automotive e-commerce sector, thus, I created an app, management systems and transfer to companies.",
+					"Developed music streaming user management systems for large companies;",
+					"I had a large participation in the creation of SaaS products in the telecommunications sector, as well as the entire CRM and CMS ecosystem of products;"
+				]
+			}
+		],
 		"information": {
 			"first": "Currently, at 21 years old, I have extensive experience in several professional projects, using cutting-edge technologies, such as React, React-Native, NextJs and vanilla stack (HTML, CSS, Javascript and Typescript), as well as preprocessors, git (for versioning) and bitbucket. With four years of experience in the telecommunications and internet provider sector, I had the opportunity to work in large companies, improving my skills in both SOFT SKILLS and HARD SKILLS.",
 			"second": "In addition to dedicating myself to fulfilling my obligations in an exemplary manner, I always seek to make the work environment more comfortable for everyone."
