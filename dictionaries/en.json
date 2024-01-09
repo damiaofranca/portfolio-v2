@@ -16,6 +16,7 @@
 	"aboutMe": {
 		"title": "About me",
 		"subtitle": "Introduction",
+		"experienceTitle": "Professional experience",
 		"information": {
 			"first": "Currently, at 21 years old, I have extensive experience in several professional projects, using cutting-edge technologies, such as React, React-Native, NextJs and vanilla stack (HTML, CSS, Javascript and Typescript), as well as preprocessors, git (for versioning) and bitbucket. With four years of experience in the telecommunications and internet provider sector, I had the opportunity to work in large companies, improving my skills in both SOFT SKILLS and HARD SKILLS.",
 			"second": "In addition to dedicating myself to fulfilling my obligations in an exemplary manner, I always seek to make the work environment more comfortable for everyone."
@@ -27,9 +28,14 @@
 		"title": "Skills"
 	},
 	"projects": {
-		"title": "Personal projects",
+		"title": "Latest projects",
 		"stackTitle": "Technologies used:",
 		"list": {
+			"incoming": {
+				"title": "In progress",
+				"description": "********** ***** ******* ************** ****",
+				"stack": "******* *****  ******"
+			},
 			"first": {
 				"altImage": "Landing page",
 				"title": "Fintech landing page",

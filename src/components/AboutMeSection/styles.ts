@@ -9,12 +9,30 @@ export const Container = styled.section`
 	flex-direction: column;
 	@media screen and (max-width: 690px) {
 		& {
-			/* align-items: flex-start; */
 			padding: 20px 26px;
 		}
 	}
 `;
+
+export const ContainerIntruction = styled.div`
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+`
+
 export const Wrapper = styled.div`
+	display: flex;
+	justify-content: center;
+
+	@media screen and (max-width: 690px) {
+		& {
+			align-items: center;
+			flex-direction: column;
+		}
+	}
+`;
+
+export const Experience = styled.div`
 	display: flex;
 	justify-content: center;
 

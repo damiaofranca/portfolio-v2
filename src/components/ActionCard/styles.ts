@@ -16,10 +16,20 @@ export const Container = styled.a`
 	background-color: #6997ff;
 	transition: all 0.1s ease-in-out;
 
+	&.disabled {
+		opacity: 0.48;
+		cursor: default;
+	}
+
 	&:hover,
 	&:focus {
 		background-color: #8baeff;
 		outline: 3px solid #cedaf5;
+
+		&.disabled {
+			outline: none !important;
+			background-color: #6997ff;
+		}
 	}
 
 	@media screen and (max-width: 768px) {

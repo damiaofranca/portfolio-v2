@@ -16,6 +16,7 @@
 	"aboutMe": {
 		"title": "Sobre mim",
 		"subtitle": "Introdução",
+		"experienceTitle": "Experiência profissional",
 		"information": {
 			"first": "Atualmente, aos 21 anos, possuo vasta experiência em diversos projetos profissionais, utilizando tecnologias de ponta, tais como React, React-Native, NextJs e stack vanilla (HTML, CSS, Javascript e Typescript), além de pré-processadores, git (para versionamento) e bitbucket. Com quatro anos de atuação no setor de telecomunicações e provedores de internet, tive a oportunidade de trabalhar em grandes empresas, aprimorando minhas habilidades tanto em SOFT SKILLS quanto HARD SKILLS.",
 			"second": "Além de me dedicar ao cumprimento das minhas obrigações de forma exemplar, busco sempre deixar o ambiente de trabalho mais comfortável para todos."
@@ -27,9 +28,14 @@
 		"title": "Habilidade"
 	},
 	"projects": {
-		"title": "Projetos pessoais",
+		"title": "Últimos projetos",
 		"stackTitle": "Technologias usadas:",
 		"list": {
+			"incoming": {
+				"title": "Em progresso",
+				"description": "********** ***** ******* ************** ****",
+				"stack": "******* *****  ******"
+			},
 			"first": {
 				"altImage": "Landing page",
 				"title": "Landing page fintech",
