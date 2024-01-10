@@ -19,6 +19,7 @@ export const Container = styled.a`
 	&.disabled {
 		opacity: 0.48;
 		cursor: default;
+		pointer-events: none;
 	}
 
 	&:hover,
