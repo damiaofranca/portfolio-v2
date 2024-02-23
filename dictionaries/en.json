@@ -55,9 +55,10 @@
 		"stackTitle": "Technologies used:",
 		"list": {
 			"incoming": {
-				"title": "In progress",
-				"description": "********** ***** ******* ************** ****",
-				"stack": "******* *****  ******"
+				"title": "Domino",
+				"altImage": "Domino",
+				"description": "Project created with the purpose of studying WebSocket with NodeJS along with my specialty.",
+				"stack": "NodeJS, Javascript, Typescript and ReactJS."
 			},
 			"first": {
 				"altImage": "Landing page",

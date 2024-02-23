@@ -55,9 +55,10 @@
 		"stackTitle": "Technologias usadas:",
 		"list": {
 			"incoming": {
-				"title": "Em progresso",
-				"description": "********** ***** ******* ************** ****",
-				"stack": "******* *****  ******"
+				"title": "Dominó",
+				"altImage": "Dominó",
+				"description": "Projeto criado com finalidade de estudar WebSocket com NodeJS junto a minha especialidade.",
+				"stack": "NodeJS, Javascript, Typescript e ReactJS."
 			},
 			"first": {
 				"altImage": "Landing page",

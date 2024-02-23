@@ -15,12 +15,13 @@ import {
 	DescriptionProject,
 } from "./styles";
 
+import Domino from "@/assets/photos/domino.png";
 import Pokedex from "@/assets/photos/pokedex.png";
 import Vertigo from "@/assets/photos/vertigo.png";
 import NpmLogo from "@/assets/photos/npm_logo.jpg";
+import InProgress from "@/assets/photos/progress_in.svg";
 import LandingPage from "@/assets/photos/landing-page.png";
 import ClientVysor from "@/assets/photos/client-vysor.png";
-import InProgress from "@/assets/photos/progress_in.svg";
 import ActionCard from "../ActionCard";
 
 interface IProjectsSection {
@@ -30,12 +31,11 @@ interface IProjectsSection {
 const ProjectsSection: React.FC<IProjectsSection> = ({ texts }) => {
 	const projects = [
 		{
-			image: { url: InProgress, alt: "In progress..." },
+			image: { url: Domino, alt: texts.list.incoming.altImage },
 			title: texts.list.incoming.title,
 			description: texts.list.incoming.description,
 			technologies: texts.list.incoming.stack,
-			nonAvailable: true,
-			urlProject: "",
+			urlProject: "https://dominoes-iota.vercel.app/",
 		},
 		{
 			image: { url: NpmLogo, alt: texts.list.four.altImage },
@@ -93,10 +93,7 @@ const ProjectsSection: React.FC<IProjectsSection> = ({ texts }) => {
 							<Technologies>{project.technologies}</Technologies>
 						</Stack>
 						<ContainerActions>
-							<ActionCard
-								url={project.urlProject}
-								isDisabled={project.nonAvailable || false}
-							/>
+							<ActionCard url={project.urlProject} />
 						</ContainerActions>
 					</Card>
 				))}
