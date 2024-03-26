@@ -48,9 +48,15 @@ export const WrapperSkills = styled.div`
 	padding: 10px;
 	display: grid;
 	column-gap: 100px;
-	grid-template-columns: auto auto auto auto;
+	grid-template-columns: auto auto auto auto auto;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 980px) {
+		& {
+			grid-template-columns: auto auto auto;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
 		& {
 			grid-template-columns: auto auto;
 		}
@@ -73,6 +79,7 @@ export const ContainerSkill = styled.div<{ $titleskill: string }>`
 		display: flex;
 		font-size: small;
 		font-weight: 600;
+		min-width: 160px;
 		border-radius: 4px;
 		position: absolute;
 		align-items: center;
@@ -82,11 +89,19 @@ export const ContainerSkill = styled.div<{ $titleskill: string }>`
 		transform: translateX(-50%);
 		transition: all 250ms ease-in-out;
 		content: ${({ $titleskill }) => `"${$titleskill}"`};
+
+		@media screen and (max-width: 600px) {
+			& {
+				height: 36px;
+				min-width: fit-content;
+			}
+		}
 	}
 
 	&:hover {
 		&::after {
 			top: -38px;
+			left: 50%;
 			opacity: 1;
 			transform: translateX(-50%);
 			transition: all 250ms ease-in-out;

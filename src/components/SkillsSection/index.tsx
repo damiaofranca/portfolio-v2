@@ -10,15 +10,16 @@ import {
 	WrapperSkills,
 } from "./styles";
 
-import HtmlIcon from "@/assets/icons/html.svg";
-import CssIcon from "@/assets/icons/css.svg";
-import JsIcon from "@/assets/icons/js.svg";
 import TsIcon from "@/assets/icons/ts.svg";
-
-import ReactIcon from "@/assets/icons/react.svg";
-import NextIcon from "@/assets/icons/next.svg";
-import TailwindIcon from "@/assets/icons/tailwind.svg";
+import JsIcon from "@/assets/icons/js.svg";
+import CssIcon from "@/assets/icons/css.svg";
 import GitIcon from "@/assets/icons/git.svg";
+import HtmlIcon from "@/assets/icons/html.svg";
+import SassIcon from "@/assets/icons/sass.svg";
+import NextIcon from "@/assets/icons/next.svg";
+import ReactIcon from "@/assets/icons/react.svg";
+import AngularIcon from "@/assets/icons/angular.svg";
+import TailwindIcon from "@/assets/icons/tailwind.svg";
 
 interface ISkillsSection {
 	texts: any;
@@ -39,6 +40,10 @@ const SkillsSection: React.FC<ISkillsSection> = ({ texts }) => {
 					<Skill src={CssIcon} alt="CSS" />
 				</ContainerSkill>
 
+				<ContainerSkill $titleskill="pré-processadores CSS">
+					<Skill src={SassIcon} alt="SCSS (pré-processadores e CSS-in-JS)" />
+				</ContainerSkill>
+
 				<ContainerSkill $titleskill="Javascript">
 					<Skill src={JsIcon} alt="Javascript" />
 				</ContainerSkill>
@@ -49,6 +54,10 @@ const SkillsSection: React.FC<ISkillsSection> = ({ texts }) => {
 
 				<ContainerSkill $titleskill="React">
 					<Skill src={ReactIcon} alt="React" />
+				</ContainerSkill>
+
+				<ContainerSkill $titleskill="Angular">
+					<Skill src={AngularIcon} alt="Angular" />
 				</ContainerSkill>
 
 				<ContainerSkill $titleskill="NextJs">
