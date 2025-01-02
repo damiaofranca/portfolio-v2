@@ -74,6 +74,22 @@ const AboutMeSection: React.FC<IAboutMeSection> = ({ texts }) => {
 					<Card>
 						<TitleJob>Front-end Developer</TitleJob>
 						<CompanyName>
+							{texts.jobs[0].company} <br />
+							{texts.jobs[0].date}
+						</CompanyName>
+
+						<ListJob>
+							{(texts.jobs[0].list as string[]).map((fact, idx) => (
+								<li key={idx}>
+									<span>{fact}</span>
+								</li>
+							))}
+						</ListJob>
+					</Card>
+
+					<Card>
+						<TitleJob>Front-end Developer</TitleJob>
+						<CompanyName>
 							{texts.jobs[1].company} <br />
 							{texts.jobs[1].date}
 						</CompanyName>
@@ -87,16 +103,16 @@ const AboutMeSection: React.FC<IAboutMeSection> = ({ texts }) => {
 						</ListJob>
 					</Card>
 
-					<Divider className="divider" />
-					<Card className="last">
+					{/* <Divider className="divider" /> */}
+					<Card>
 						<TitleJob>Front-end Developer</TitleJob>
 						<CompanyName>
-							{texts.jobs[0].company} <br />
-							{texts.jobs[0].date}
+							{texts.jobs[2].company} <br />
+							{texts.jobs[2].date}
 						</CompanyName>
 
 						<ListJob>
-							{(texts.jobs[0].list as string[]).map((fact, idx) => (
+							{(texts.jobs[2].list as string[]).map((fact, idx) => (
 								<li key={idx}>
 									<span>{fact}</span>
 								</li>

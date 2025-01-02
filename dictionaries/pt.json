@@ -19,14 +19,13 @@
 		"experienceTitle": "Experiência profissional",
 		"jobs": [
 			{
-				"company": "Brisanet Telecomunicações",
-				"date": "03/20 - 06/22",
+				"company": "MK Solutions",
+				"date": "06/24 - Atual",
 				"list": [
-					"Desenvolvi e mantive aplicações front-end para a Brisanet Telecomunicações, com foco em melhorar a experiência do usuário e a usabilidade de seus serviços online;",
-					"Colaborei estritamente com a equipe de backend e o cliente para implementar as regras de negócio de acordo com o esperado, garantindo uma consistência nas funcionalidades em toda a plataforma;",
-					"Utilizei tecnologias como Angular,React, React-native, NextJS, bibliótecas UI e pré-processadores, visando o desempenho,design e velocidades das aplicações;",
-					"Participei de reuniões de planejamento e revisão de código, garantindo a entrega pontual de projetos e mantendo um alto padrão de qualidade no código front-end;",
-					"Colaborei com a implementação de projetos embargados visando a corte de custos assim como a utilização para criação de novos produtos;"
+					"Desenvolvimento de módulos do ERP, como financeiro, contas a pagar e receber, e sistema de emissão de notas fiscais, atendendo às necessidades de empresas com mais de 100 mil usuários;",
+					"Atualização de interfaces antigas para modernas e eficientes utilizando ReactJS, Zustand e TailwindCSS, Typescript e entre outras garantindo escalabilidade e alta performance;",
+					"Otimização de fluxos operacionais e integração de sistemas, contribuindo para a eficiência dos processos internos de provedores de telecomunicações;",
+					"Colaboração na análise técnica e tradução de fluxos e requisitos em soluções práticas, utilizando ferramentas como Jira e Figma para garantir uma integração eficiente entre módulos e equipe;"
 				]
 			},
 			{
@@ -37,6 +36,17 @@
 					"Desenvolvi projetos no ramo de e-commerce automobilístico,assim, criei app, sistemas de gerênciamento e repasse para empressas.",
 					"Desenvolvi sistemas gerencimento de usuário de streaming de música de grandes empresas;",
 					"Tive grande participação na criação de produtos SaaS no ramo de telecomunicação, assim como todo o ecossistema de CRM e CMS dos produtos;"
+				]
+			},
+			{
+				"company": "Brisanet Telecomunicações",
+				"date": "03/20 - 06/22",
+				"list": [
+					"Desenvolvi e mantive aplicações front-end para a Brisanet Telecomunicações, com foco em melhorar a experiência do usuário e a usabilidade de seus serviços online;",
+					"Colaborei estritamente com a equipe de backend e o cliente para implementar as regras de negócio de acordo com o esperado, garantindo uma consistência nas funcionalidades em toda a plataforma;",
+					"Utilizei tecnologias como Angular,React, React-native, NextJS, bibliótecas UI e pré-processadores, visando o desempenho,design e velocidades das aplicações;",
+					"Participei de reuniões de planejamento e revisão de código, garantindo a entrega pontual de projetos e mantendo um alto padrão de qualidade no código front-end;",
+					"Colaborei com a implementação de projetos embargados visando a corte de custos assim como a utilização para criação de novos produtos;"
 				]
 			}
 		],

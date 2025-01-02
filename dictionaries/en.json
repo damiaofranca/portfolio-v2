@@ -19,14 +19,13 @@
 		"experienceTitle": "Professional experience",
 		"jobs": [
 			{
-				"company": "Brisanet Telecommunications",
-				"date": "03/2020 - 06/2022",
+				"company": "MK Solutions",
+				"date": "06/24 - Current",
 				"list": [
-					"Developed and maintained front-end applications for Brisanet Telecomunicações, with a focus on improving the user experience and usability of its online services;",
-					"Collaborated strictly with the backend team and the client to implement the rules business as expected, ensuring consistency in functionality across the platform;",
-					"Used technologies such as Angular, React, React-native, NextJS, UI libraries and pre-processors, aiming for performance, design and application speeds ;",
-					"Participated in planning and code review meetings, ensuring on-time delivery of projects and maintaining a high standard of quality in front-end code;",
-					"Collaborated with the implementation of embargoed projects aiming to cut costs as well as use to create new products;"
+					"Development of ERP modules, such as financial, accounts payable and receivable, and invoice issuance system, meeting the needs of companies with more than 100 thousand users;",
+					"Updating old interfaces to modern and efficient ones using ReactJS, Zustand and TailwindCSS, Typescript and others, ensuring scalability and high performance;",
+					"Optimization of operational flows and system integration, contributing to the efficiency of internal processes of telecommunications providers;",
+					"Collaboration in technical analysis and translation of flows and requirements into solutions;"
 				]
 			},
 			{
@@ -37,6 +36,17 @@
 					"I developed projects in the automotive e-commerce sector, thus, I created an app, management systems and transfer to companies.",
 					"Developed music streaming user management systems for large companies;",
 					"I had a large participation in the creation of SaaS products in the telecommunications sector, as well as the entire CRM and CMS ecosystem of products;"
+				]
+			},
+			{
+				"company": "Brisanet Telecommunications",
+				"date": "03/2020 - 06/2022",
+				"list": [
+					"Developed and maintained front-end applications for Brisanet Telecomunicações, with a focus on improving the user experience and usability of its online services;",
+					"Collaborated strictly with the backend team and the client to implement the rules business as expected, ensuring consistency in functionality across the platform;",
+					"Used technologies such as Angular, React, React-native, NextJS, UI libraries and pre-processors, aiming for performance, design and application speeds ;",
+					"Participated in planning and code review meetings, ensuring on-time delivery of projects and maintaining a high standard of quality in front-end code;",
+					"Collaborated with the implementation of embargoed projects aiming to cut costs as well as use to create new products;"
 				]
 			}
 		],

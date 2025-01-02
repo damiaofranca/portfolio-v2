@@ -52,14 +52,6 @@ const ProjectsSection: React.FC<IProjectsSection> = ({ texts }) => {
 			urlProject: "https://client-vysor.vercel.app",
 		},
 		{
-			image: { url: Pokedex, alt: texts.list.third.altImage },
-			title: texts.list.third.title,
-			description: texts.list.third.description,
-			technologies: texts.list.third.stack,
-			urlProject: "https://pokedex-nzuf.vercel.app/",
-		},
-
-		{
 			image: { url: LandingPage, alt: texts.list.first.altImage },
 			title: texts.list.first.title,
 			description: texts.list.first.description,
