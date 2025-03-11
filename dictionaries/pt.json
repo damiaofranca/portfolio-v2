@@ -82,12 +82,6 @@
 				"description": "Projeto criado com finalidade de gerênciamento de produtos + clientes de forma real time.",
 				"stack": "Typescript, React, Styled Components e Firebase."
 			},
-			"third": {
-				"title": "Pokedex",
-				"altImage": "Pokedex",
-				"description": "Projeto criado com finalidade de ánalise de dados dos personagens do anime Pokemon.",
-				"stack": "Typescript, React, Vite, Axios e Styled Components."
-			},
 			"four": {
 				"title": "Google Handler Area",
 				"altImage": "Google Handler Area",
