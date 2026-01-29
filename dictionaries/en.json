@@ -9,7 +9,7 @@
 		"subtitle": "Front-end Developer",
 		"context": {
 			"first": "Front-end developer for more",
-			"second": "4 years focusing on ReactJs and NextJs."
+			"second": "6 years focusing on ReactJs and NextJs."
 		},
 		"contactInformation": "Contact information"
 	},
@@ -30,7 +30,7 @@
 			},
 			{
 				"company": "BRND Solutions",
-				"date": "06/2020 - 08/2023",
+				"date": "06/22 - 05/24",
 				"list": [
 					"I collaborated strictly with client projects in the front-end area, aiming to get the client's idea off the ground;",
 					"I developed projects in the automotive e-commerce sector, thus, I created an app, management systems and transfer to companies.",
@@ -40,7 +40,7 @@
 			},
 			{
 				"company": "Brisanet Telecommunications",
-				"date": "03/2020 - 06/2022",
+				"date": "03/20 - 06/22",
 				"list": [
 					"Developed and maintained front-end applications for Brisanet Telecomunicações, with a focus on improving the user experience and usability of its online services;",
 					"Collaborated strictly with the backend team and the client to implement the rules business as expected, ensuring consistency in functionality across the platform;",
@@ -71,28 +71,16 @@
 				"stack": "NodeJS, Javascript, Typescript and ReactJS."
 			},
 			"first": {
-				"altImage": "Landing page",
-				"title": "Fintech landing page",
-				"description": "Project created for marketing purposes for a fintech company.",
-				"stack": "Typescript, Angular and SCSS."
-			},
-			"second": {
 				"title": "Client Vysor",
 				"altImage": "Product + customer management system",
 				"description": "Project created for the purpose of managing products + customers in a real-time manner.",
 				"stack": "Typescript, React, Styled Components and Firebase."
 			},
-			"four": {
+			"second": {
 				"title": "Google Handler Area",
 				"altImage": "Google Handler Area",
 				"description": "React package created for area management on Google Maps.",
 				"stack": "Typescript, React and NodeJS."
-			},
-			"five": {
-				"title": "Login UI",
-				"altImage": "Vanilla UI login",
-				"description": "Project created with the aim of knowledge analysis.",
-				"stack": "Typescript, React, formik, Yup, Styled Components."
 			}
 		}
 	}

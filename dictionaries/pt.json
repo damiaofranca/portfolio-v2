@@ -9,7 +9,7 @@
 		"subtitle": "Desenvolvedor Front-end",
 		"context": {
 			"first": "Desenvolvedor front-end há mais",
-			"second": "de 4 anos com foco em ReactJs e NextJs."
+			"second": "de 6 anos com foco em ReactJs e NextJs."
 		},
 		"contactInformation": "Informações de contato"
 	},
@@ -30,7 +30,7 @@
 			},
 			{
 				"company": "BRND Soluções",
-				"date": "06/22 - 08/23",
+				"date": "06/22 - 05/24",
 				"list": [
 					"Colaborei estritamente com projetos de clientes na área de front-end visando retirar a ideia do cliente para fora do papel;",
 					"Desenvolvi projetos no ramo de e-commerce automobilístico,assim, criei app, sistemas de gerênciamento e repasse para empressas.",
@@ -51,7 +51,7 @@
 			}
 		],
 		"information": {
-			"first": "Atualmente, aos 22 anos, possuo experiência em diversos projetos profissionais, utilizando tecnologias tais como: React, React-Native, NextJs e stack vanilla (HTML, CSS, Javascript e Typescript), além de pré-processadores, git (para versionamento) e bitbucket. Com quatro anos de atuação no setor de telecomunicações e provedores de internet, tive a oportunidade de trabalhar em grandes empresas, aprimorando minhas habilidades tanto em SOFT SKILLS quanto HARD SKILLS.",
+			"first": "Atualmente, aos 23 anos, possuo experiência em diversos projetos profissionais, utilizando tecnologias tais como: React, React-Native, NextJs e stack vanilla (HTML, CSS, Javascript e Typescript), além de pré-processadores, git (para versionamento) e bitbucket. Com quatro anos de atuação no setor de telecomunicações e provedores de internet, tive a oportunidade de trabalhar em grandes empresas, aprimorando minhas habilidades tanto em SOFT SKILLS quanto HARD SKILLS.",
 			"second": "Além de me dedicar ao cumprimento das minhas obrigações de forma exemplar, busco sempre deixar o ambiente de trabalho mais confortável para todos."
 		},
 		"buttonCv": "Visualizar CV",
@@ -71,28 +71,16 @@
 				"stack": "NodeJS, Javascript, Typescript e ReactJS."
 			},
 			"first": {
-				"altImage": "Landing page",
-				"title": "Landing page fintech",
-				"description": "Projeto criado com finalidade de marketing de uma empresa ramo fintech.",
-				"stack": "Typescript, Angular e SCSS."
-			},
-			"second": {
 				"title": "Client Vysor",
 				"altImage": "Sistema de gerênciamento de produtos + clientes",
 				"description": "Projeto criado com finalidade de gerênciamento de produtos + clientes de forma real time.",
 				"stack": "Typescript, React, Styled Components e Firebase."
 			},
-			"four": {
+			"second": {
 				"title": "Google Handler Area",
 				"altImage": "Google Handler Area",
 				"description": "Pacote React criado para gerênciamento de área no Google Maps.",
 				"stack": "Typescript, React e NodeJS."
-			},
-			"five": {
-				"title": "Login UI",
-				"altImage": "Vanilla UI login",
-				"description": "Projeto criado com intuito de ánalise de conhecimento.",
-				"stack": "Typescript, React, formik, Yup, Styled Components."
 			}
 		}
 	}
